@@ -16,8 +16,8 @@ public class Class_cars {
 		ar.type="Four_Wheeler";
 		ar.price=10000.55;
 		ar.Fun();
-		System.out.println("Name of bike company "+ar.name);
-        System.out.println(bk.name);
+		//System.out.println("Name of bike company "+ar.name);
+        //System.out.println(bk.name);
 
 	}
 		
