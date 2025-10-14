@@ -6,6 +6,7 @@ public class Java_method {
 
 		Book book=new Book(10,20);//constructor call.
 		book.display();
+
 	}
 }
 
