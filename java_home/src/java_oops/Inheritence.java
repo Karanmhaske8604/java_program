@@ -6,6 +6,7 @@ public class Inheritence {
 		
 		A a=new A();
 		
+		
 		System.out.println(a.access);
 		a.method();
 		
@@ -17,10 +18,10 @@ public class Inheritence {
 		C c=new C();
 		System.out.println(c.access);
 		c.method();
+		c.display();
 		c.show();
 		
 	}
-
 }
 
 class A
@@ -43,7 +44,7 @@ class B extends A
 	}
 	
 }
- class C extends A
+ class C extends B
  {
 	 //C sub class extends A parent class
 	 public void show()
