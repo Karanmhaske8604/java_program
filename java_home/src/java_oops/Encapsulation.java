@@ -10,30 +10,30 @@ public class Encapsulation {
 		/*Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the Name of Employee");
 		String Name=sc.next();
-		//String Name=emp.setName();
+		//String Name=emp.setName();*/
 			
 		
 		
-		/*emp.name="Aniket";//data member is public 
-		System.out.println(emp.name);*/
+		emp.name="Aniket";//data member is public so it can have direct access in main method.
+		System.out.println(emp.name);
 		
-		emp.setName("Karan");//i.e we can change the value 
+		emp.setName("Karan");
 		System.out.println(emp.getName());
 		
 		/**emp.e_id="emp1125";
-		System.out.println(emp.e_id); //data member is secure because we make it private so no one will interfare with it.
+		System.out.println(emp.e_id); //data member is secure so we an not direct access it.
 		**/
 		
 		emp.setE_id("RS121");
 		System.out.println(emp.getE_id());
 		
-		emp.setPass("passward");
+		emp.setPass(" ");
 		System.out.println(emp.getPass());
 				
 		emp.setEmail("karanmhaske@gmail.com");
 		System.out.println(emp.getEmail());
 		
-		emp.setSalary(4500);
+		emp.setSalary(45000);
 		System.out.println(emp.getSalary());
 		
 		emp.setContact("9021644941");
@@ -41,13 +41,13 @@ public class Encapsulation {
 		
 	
 		emp.setCity("Nanded");
-		//System.out.println(emp.getCity());
+		System.out.println(emp.getCity());
 		
 		emp.setState("Maharastra");
-		//System.out.println(emp.getState());
+		System.out.println(emp.getState());
 		
-		emp.setPin(4522);
-		//System.out.println(emp.getPin());
+		emp.setPin(45256);
+		System.out.println(emp.getPin());
 		
 		emp.setPost("System Associate");
 		//System.out.println(emp.getPost());
@@ -89,13 +89,13 @@ class Employee
 	
 	public void setPass(String password)
 	{
-		if(password !=null && password.length()>=8)
+		if(password !=null || password.length()>=8)
 		{
-			this.password=password;
+			System.out.println("password is inappropriate");
 		}
 		else
 		{
-			System.out.println("password is inappropriate");
+			this.password=password;
 		}
 	}
 	public String getPass()
@@ -122,13 +122,30 @@ class Employee
 	
 	public void setSalary(double salary)
 	{ 
-		if(salary<0)
+		if(salary<0 || salary <35000)
 		{
-			System.out.println("no negative value");
+			System.out.println("work hard");
 		}
-		else 
+		else if(salary >35000 || salary<45000)
 		{
-	this.salary=salary;
+			System.out.println("class D level officer");
+		}
+		else if(salary>45000 || salary<55000)
+		{
+			System.out.println("class C level officer");
+		}
+		else if(salary>55000 || salary<65000)
+		{
+			System.out.println("class B level officer");
+		}
+		else if(salary>65000 || salary<75000)
+		{
+			System.out.println("class A level officer");
+		}
+		else if(salary>75000)
+		{
+	     this.salary=salary;
+	     System.out.println("salary if good enough");
 		}
 	}
 	public double getSalary()
@@ -145,6 +162,7 @@ class Employee
 		}
 		else
 		{
+			System.out.print("+91 ");
 		this.contact=contact;
 		}
 		
@@ -178,7 +196,14 @@ class Employee
 	
 	public void setPin(int pincode)
 	{
+		if(pincode>6)
+		{
+			System.out.println("Pincode should be 6 digits");
+		}
+		else
+		{
 		this.pincode=pincode;
+		}
 	}
 	public int getPin()
 	{
