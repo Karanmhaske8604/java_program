@@ -12,7 +12,7 @@ public class Strinnninterning {
 		
 		String str4=new String("pqr");
 		
-		System.out.println(str==str2);
+		System.out.println(str==str2);//
 		System.out.println(str==str3);
 		System.out.println(str2==(str4));//
 				
