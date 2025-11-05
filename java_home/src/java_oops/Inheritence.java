@@ -37,6 +37,7 @@ class A
 class B extends A
 {
 	//B sub class inherit properties of A parent class
+	// This is example of single level inheritence
 	
 	public void display()
 	{
