@@ -3,8 +3,18 @@ package java_home.Oops;
 public class MethodOverriding {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
+}
+ 
+class Planet
+{
+  public void 
+}
+
+class Earth extends Planet
+{
+	
 }
