@@ -19,7 +19,7 @@ public class ArrayList_Logic1 {
 			
 		}
 		
-		System.out.println(list.contains("Keshav"));
+		System.out.println(list.contains("Keshav"));//return boolean
 		
 		
 		
