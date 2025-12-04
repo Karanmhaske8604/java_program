@@ -1,6 +1,4 @@
-package java_oops;
-
-import java.util.Scanner;
+package java_home.Oops;
 
 public class Encapsulation {
 

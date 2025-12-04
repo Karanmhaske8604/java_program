@@ -1,4 +1,4 @@
-package java_oops;
+package java_home.Oops;
 
 public class Third {
 

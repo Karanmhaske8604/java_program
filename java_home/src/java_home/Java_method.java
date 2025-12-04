@@ -1,4 +1,4 @@
-package java_home.methods;
+package java_home;
 
 public class Java_method {
 

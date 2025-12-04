@@ -1,4 +1,4 @@
-package java_array;
+package java_home.array;
 
 public class Highnum {
 

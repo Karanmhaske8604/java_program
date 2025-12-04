@@ -1,4 +1,4 @@
-package java_oops;
+package java_home.Oops;
 import java.util.Scanner;
 public class Encapsulation_stud {
 
@@ -12,7 +12,7 @@ public class Encapsulation_stud {
 		System.out.println("Enter the name");
 		String name=sc.next();
 		String Name=name;
-		aniket.setName(name);
+		aniket.setName(Name);
 		
 		System.out.println("Enter the ID");
 		int id=sc.nextInt();
@@ -94,7 +94,7 @@ System.out.println("*******************************************************");
 			System.out.println(aniket.getpercentage());
 			
 
-	
+	sc.close();
 
 	}
 
