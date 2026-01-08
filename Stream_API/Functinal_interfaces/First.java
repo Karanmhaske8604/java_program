@@ -13,7 +13,7 @@ public class First {
 	 Predicate <String> pred=(i)->{
 		return i.length()>10;
 	};
-	System.out.println(pred.test("jhviwmn c"));
+	System.out.println(pred.test("jhviwmn c "));
 	}
 
 }
