@@ -14,11 +14,11 @@ public class Operation10 {
 		.stream()
 		.filter((i)->{return i.Marks>90 && i.Marks<99;})
 		.sorted((i,j)->{return Double.compare(j.Marks, i.Marks);})
-		.limit(2)
-		//.skip(0)
-		.forEach((i)->{System.out.println("Second Ranker :-"+i);});
-		
-		
+		.limit(3)
+		.skip(0)
+		.forEach((i)->{System.out.println("First Two Ranker :-"+i);});
+		//.count();
+	
 	}
 
 }
