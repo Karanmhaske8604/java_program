@@ -11,10 +11,9 @@ public class Operation8 {
 		Students stud=new Students(1, "KARAN");
 		Students stud2=new Students(1,"KESHAV");
 		
-		List<Students> list=new ArrayList<Students>();
+		List<Students> list=List.of(stud,stud2);
 		
-		list.add(stud2);
-		list.add(stud);
+		
 		
 		System.out.println(list);
 		
@@ -32,10 +31,10 @@ class Students
 	 this.id=id;
 	 this.Name=Name;
  }
- public  void toString(int id,String Name)
+ public  String toString()
  {
 	 this.id=id;
-	 this.Name=Name;
+	 return this.Name=Name;
  }
  
  
