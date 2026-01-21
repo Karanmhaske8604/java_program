@@ -21,6 +21,8 @@ public class Operation13 {
 			.reduce("",(i,j)->{return i.concat(j)+"####";});
 	System.out.println(conct);
 	
+	
+	
 
 	}
 
