@@ -15,7 +15,9 @@ public class Reference1 {
 	System.out.println(sum);
 	}
 }
-
+/*Instead of creating custom class for methods we can provide them directly into main method of class 
+* then provide main class name in method in place of Demo.
+*/
 class Demo
 {
 	public static boolean add(int i)
