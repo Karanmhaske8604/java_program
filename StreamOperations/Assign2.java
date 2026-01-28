@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Assign2 {
 
 	public static void main(String[] args) {
-		// Make grp of Second Highest Marks from each dept.
+		// Make group of Second Highest Marks from each Sub.
 	
 		Map<String,List<Studnts>> stu=	List.of(new Studnts(1,"IT",93.20f),new Studnts(12,"Physics",90.80f),new Studnts(31,"Bio",95.40f),new Studnts(16,"Physics",97.50f),new Studnts(36,"Bio",89.20f))
 		.stream()
