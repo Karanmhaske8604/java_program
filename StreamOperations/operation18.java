@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class operation18 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Collect method for toList(),toMap(),toSet().
 		
 		List<String>list1=List.of("Abhishek","salman","Ajay","Manoj")
 		.stream()
@@ -16,9 +16,9 @@ public class operation18 {
 		.collect(Collectors.toList());
 		System.out.println(list1);
 		
-		Map<Integer,String>list2=List.of("Abhishek","salman","Ajay","anoj")
+		Map<Integer,String>list2=List.of("Abhishek","salman","Ajay","anoj")//No Dup.key in map Allowed.
 		.stream()
-		.collect(Collectors.toMap(String::length, String::new,(first,second)->{return first;}));
+		.collect(Collectors.toMap(String::length, String::new,(first,second)->{return first;}));//Binary Merge function.
 		System.out.println(list2);
 		
 		Set<String>list3=List.of("Abhishek","salman","Ajay","Ajay")
