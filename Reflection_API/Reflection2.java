@@ -10,6 +10,7 @@ public class Reflection2 {
 		/* Reflection_API by 3 ways
 		* 1)Class.forName(),2).getClass(),3).Class()
 		*/
+		//Private Constructor Invokation by Reflection API
 		 System.out.println(Bussiness.class);
 		 System.out.println();
 		
@@ -30,13 +31,18 @@ public class Reflection2 {
 			}
 			System.out.println();
 		}
+		System.out.println("//////////////////////////////////////");
 			
-			Constructor<?> ct2=cl.getDeclaredConstructor(int.class);
+			Constructor<?> ct2=cl.getDeclaredConstructor(int.class);//Match Method Sign.
 			System.out.println(ct2);
+			Constructor<?> ct3=cl.getDeclaredConstructor(String.class);
+			System.out.println(ct3);
 						
-			ct2.setAccessible(true);
+			ct2.setAccessible(true); ct3.setAccessible(true);
 			Bussiness bs=(Bussiness) ct2.newInstance(1200);
+			Bussiness bss=(Bussiness)ct3.newInstance("Karan");
 			System.out.println(bs.i);
+			System.out.println(bs.name);
 		
 	
 	}
@@ -46,6 +52,7 @@ public class Reflection2 {
 class Bussiness
 {
 	int i;
+	String name;
 	private Bussiness()
 	{
 		
@@ -56,7 +63,7 @@ class Bussiness
 	}
 	public Bussiness(String name)
 	{
-		
+		System.out.println("my name is: "+name);
 	}
 }
 
