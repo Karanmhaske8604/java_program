@@ -9,7 +9,7 @@ public class Prog3 {
 		 * 
 		 */
 		Sum_Avg t1=new Sum_Avg("t1",1);
-		t1.t.join();
+	 t1;
 
 	}
 
