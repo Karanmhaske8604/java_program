@@ -35,7 +35,7 @@ public class Volatilekey {
 		read.start();
 		write.start();
 		
-		flag=true;
+		
 	}
 	
 	volatile static boolean flag=true;
