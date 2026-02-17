@@ -21,15 +21,15 @@ public class ExecutorEight {
 			)
 		{
 		 Future<?> ft=ex.submit(run); 
-		 System.out.println(ft.get());
+		System.out.println(ft.get());//return NULL
 		  
-		 Future<String> ft2=ex.submit(run,"HIII"); 
+		Future<String> ft2=ex.submit(run,"HIII"); //return default value
 		 System.out.println(ft2.get());
 		}
-		 
+		
 		  //ex.shutdown();
 		
-
+	}
 	}
 
-}
+
