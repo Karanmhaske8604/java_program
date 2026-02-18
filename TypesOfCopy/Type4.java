@@ -3,7 +3,7 @@ package java_home.TypesOfCopy;
 public class Type4 {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
-		//
+		//Deep Copy 
 		
 		Author ar=new Author();
 		ar.Name="James Gosling";
@@ -40,7 +40,7 @@ class Book implements Cloneable
 	public Object clone() throws CloneNotSupportedException
 	{
 		Book b1=(Book)super.clone();
-		b1.author=(Author)this.author.clone();		
+		b1.author=(Author)this.author.clone();	//Main Solution	
 		
 		return b1;
 		
