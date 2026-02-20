@@ -6,13 +6,15 @@ public class Type5 {
 		// Deep Copy=> Copy Constructor
 		
 		Forest forest=new Forest();
-		forest.Location = "pune";		
+		//forest.Location = "pune";		
 		
 		Animal animal=new Animal();
 		
 		animal.id=152;
 		animal.name="Tiger";
+		
 		animal.forest=forest;
+		animal.forest.Location = "pune";
 	    
 	    
 	 	Animal animal2=new Animal(animal);
@@ -55,7 +57,7 @@ class Animal
 		this.name=animal.name;
 		this.forest = new Forest();
 		this.forest.Location=animal.forest.Location;
-		
+	
 	}
 	
 
