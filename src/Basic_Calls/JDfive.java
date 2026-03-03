@@ -12,7 +12,7 @@ public class JDfive {
 		
 		
 	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Class","root","root");
-	System.out.println(con);
+	//System.out.println(con);
 	Statement stmt=con.createStatement();
 	
 	con.setAutoCommit(false);
