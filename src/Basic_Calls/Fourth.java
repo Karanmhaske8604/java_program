@@ -1,0 +1,10 @@
+package Basic_Calls;
+
+public class Fourth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
