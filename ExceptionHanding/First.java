@@ -5,9 +5,6 @@ public class First {
 	public static void main(String[] args) {
 
 		  int i=51;
-		  
-		  
-		 
 		  try {
 		    if(i>50)
 		    {
@@ -20,8 +17,6 @@ public class First {
 		  }
 		    System.out.println("You are welcome....");
 		   System.out.println("THE END");
-		
-
 	}
 }
 
