@@ -12,6 +12,7 @@ public class Starvation2 {
 				{
 				System.out.println("You can swim");
 				}
+				
 				System.out.println("You are Minor");
 			}
 		});

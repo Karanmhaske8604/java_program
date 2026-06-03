@@ -16,9 +16,9 @@ public class Assignment1 {
 //		.forEach((i)->{System.out.println(i);});
 		
 		String s="WeelCooMMEEES";
-		StringBuffer sb=new StringBuffer(sb);
+		StringBuffer sb=new StringBuffer(s);
 		
-		List<String> list=new S
+		
 		
 
 	}
